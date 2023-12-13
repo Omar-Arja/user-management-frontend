@@ -10,12 +10,6 @@ import { User } from '../../models/user.model';
   imports: [TableModule],
 })
 export class UserTableComponent implements OnInit {
-  clearFilters() {
-    throw new Error('Method not implemented.');
-  }
-  filter($event: Event) {
-    throw new Error('Method not implemented.');
-  }
 
   users: User[] = [];
 
@@ -102,13 +96,5 @@ export class UserTableComponent implements OnInit {
         isActive: false,
       },
     ];
-  }
-
-  editUser(user: User): void {
-    // TODO: Handle edit logic
-  }
-
-  deleteUser(user: User): void {
-    // TODO: Handle delete logic
   }
 }
